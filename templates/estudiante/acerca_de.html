@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acerca de...</title>
+    <link rel="stylesheet" href="../../static/css/mainTemplate.css">
+    <link rel="stylesheet" href="../../static/dependencies/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/dependencies/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../static/dependencies/bootstrap/css/bootstrap-reboot.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <nav class="main-navbar-menu d-flex flex-row justify-content-arround">
+            <div style="width: 20%; padding: 0" class="logo-and-sidebar-button-container">
+                <div style="width: 80%">
+                    <a class="" href="#">LOGO</a>
+                </div>
+                <div style="width: 20%">
+                    <button class="sidebar-toggle">
+                      <i class="fas fa-bars"></i>
+                </button>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between justify-items-center" style="width: 80%;">
+                   <!--<button class="sidebar-toggle">
+                      <i class="fas fa-bars"></i>
+                   </button>-->
+                <div>
+                    <ul class="d-flex flex-row justify-content-center" style="margin-top: 1em;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unidad I</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unidad II</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unidad III</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unidad IV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column align-content-center">
+                    <ul class="d-flex flex-row align-content-center align-items-center" style="margin-top: 1em;">
+                        <li class="nav-item"><a href="" class="nav-link">Ingresar datos</a></li>
+                        <li class="nav-item"><a href="" class=" nav-link">Predecir</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<section style="margin-left: 6em; margin-right: 6em" class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <h3 style="text-align: center"><strong>Contenido</strong></h3>
+        <p>
+            <strong>2. Using the Python Interpreter
+            2.1. Invoking the Interpreter <br> </strong>
+        </p>
+        <p>
+            The Python interpreter is usually installed as /usr/local/bin/python3.11 on those machines where it is available;
+            <br>
+            putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:
+            <br>
+        </p>
+            <p>
+                to the shell. 1 Since the choice of the directory where the interpreter lives is an installation option, other places are possible;
+                <br>
+                check with your local Python guru or system administrator. (E.g., /usr/local/python is a popular alternative location.)
+                <br>
+            </p>
+
+        <p>
+            On Windows machines where you have installed Python from the Microsoft Store, the python3.11 command will be available.
+            <br>
+            If you have the py.exe launcher installed, you can use the py command. See Excursus: Setting environment variables for other ways to launch Python.
+            <br>
+            <h3><strong>2.1.1. Argument Passing</strong></h3>
+            <p>
+                When known to the interpreter, the script name and additional arguments thereafter are turned into a list of strings and assigned to the argv variable in the sys module.
+                <br>
+                You can access this list by executing import sys. The length of the list is at least one; when no script and no arguments are given, sys.argv[0] is an empty string. When the script name is given as
+                <br>
+                '-' (meaning standard input), sys.argv[0] is set to '-'. When -c command is used, sys.argv[0] is set to '-c'. When -m module is used, sys.argv[0] is set to the full name of the located module. Options found after -c command
+                or -m module are not consumed by the Python interpreter’s option processing but left in sys.argv for the command or module to handle.
+            </p>
+        </p>
+            <h3><strong>2.1.2. Interactive Mode</strong></h3>
+            <p>
+                When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts for the next command with the primary prompt
+                <br>
+                usually three greater-than signs (>>>); for continuation lines it prompts with the secondary prompt, by default three dots (...)
+                <br>
+                The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt:
+            </p>
+
+        </div>
+        <div class="col-6">
+            <div class="d-flex flex-column align-items-center justify-content-center ml-3" style="height: 40em;">
+                <h3 style="text-align: center"><strong>Vídeo explicativo</strong></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QZWzffGMBUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.svg" class="logo" alt="" />
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+
+      <!-- links -->
+      <ul class="links">
+          <li style="text-align: center; font-weight: bold">
+             <strong> Tabla de contenido</strong>
+          </li>
+        <dl style="margin-left: 2em">
+            <dt>2. Using the Python Interpreter</dt>
+            <dd>A large way to define a variable</dd>
+            <dd>2.1. Invoking the Interpreter</dd>
+            <dd>2.1.1. Argument Passing</dd>
+            <dd>2.1.2. Interactive Mode</dd>
+
+            <dt>2.2. The Interpreter and Its Environment</dt>
+            <dd>2.2. The Interpreter and Its Environment</dd>
+            <dd>
+                2.2.1. Source Code Encoding
+            </dd>
+
+        </dl>
+
+
+
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- javascript -->
+    <script src="../../static/js/mainTemplate.js"></script>
+</body>
+</html>
